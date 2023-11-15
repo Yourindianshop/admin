@@ -1,0 +1,93 @@
+#displayProducts {
+    /* background-color: crimson; */
+    height: auto;
+    width: 100%;
+    /* padding: 35px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 40px 35px;
+    flex-wrap: wrap;
+}
+
+#prod {
+    background: rgb(255, 255, 255);
+    /* max-height: 50vh; */
+    overflow: hidden;
+    position: relative;
+    width: 250px;
+
+}
+
+.proTop {
+    width: 100%;
+    overflow: hidden;
+}
+
+.proTop img {
+    width: 100%;
+    transition: 0.35s ease-in-out;
+}
+
+.proTop:hover img {
+    transform: scale(1.1);
+}
+
+#proData {
+    /* position: absolute; */
+    margin-top: -50px;
+    background: #fff;
+    display: flex;
+    position: relative;
+    z-index: 11 !important;
+    bottom: -50px;
+    flex-direction: column;
+    transition: 0.25s ease-in-out;
+    padding: 25px 30px;
+    /* border: 5px solid goldenrod; */
+}
+
+#prod:hover #proData {
+    bottom: 0;
+    /* position: absolute; */
+    /* margin-top: 0px; */
+}
+
+.proName {
+    font-family: var(--font8);
+    font-weight: 600;
+    font-size: 1.35rem;
+}
+
+.proPrice {
+    font-family: var(--font8);
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: #545454;
+}
+
+.atc {
+    width: 100%;
+    display: flex;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.25s ease-in-out;
+}
+
+.btn-y {
+    background: rgb(236, 201, 0);
+    color: white;
+}
+
+.btn-r {
+    background: crimson;
+}
+
+.btn-y:hover {
+    background: rgb(200, 170, 0);
+    color: white;
+}
+
+.btn-r:hover {
+    background: rgb(171, 11, 43);
+}

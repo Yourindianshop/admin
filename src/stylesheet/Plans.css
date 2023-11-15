@@ -1,0 +1,161 @@
+/* PlanCard.css */
+#plan-cards {
+    display: flex;
+    padding: 15px 0;
+    gap: 5px;
+    background: #eee;
+    flex-wrap: wrap;
+    height: auto;
+    /* min-height: 100dvh; */
+    /* overflow-y: scroll; */
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+#pl-ol {
+
+    transition: max-height 0.3s ease;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    /* Adjust this value to control the initial card height */
+}
+
+.plan-card {
+    min-width: 350px;
+    max-width: 375px;
+    padding: 35px;
+    position: relative;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+
+#pl-ol:nth-child(2) .btn {
+    background-color: var(--org);
+    border: 2px solid var(--org);
+
+}
+
+#pl-ol:nth-child(2) .btn:hover {
+    background-color: var(--blue);
+
+}
+
+#pl-ol:nth-child(2) .plan-card {
+    background-image: url('https://raw.githubusercontent.com/KHUNTPRIYANSH/site_photos/main/shipping/home1-el-3.png');
+    background-position: right -100px;
+    background-repeat: no-repeat;
+}
+
+#pl-ol:nth-child(1) .plan-card {
+    background-image: url('https://raw.githubusercontent.com/KHUNTPRIYANSH/site_photos/main/shipping/shapes-img.png');
+    background-position: right -70px;
+    background-repeat: no-repeat;
+}
+
+#pl-ol:nth-child(3) .plan-card {
+    background-image: url('https://raw.githubusercontent.com/KHUNTPRIYANSH/site_photos/main/shipping/shapes-img.png');
+    background-position: right 420px;
+    background-repeat: no-repeat;
+}
+
+#pl-ol:nth-child(2) .plan-name {
+    color: #fff;
+}
+
+#pl-ol:nth-child(2) {
+    background: var(--blue);
+
+}
+
+#pl-ol:nth-child(2) li {
+    /* background: var(--blue); */
+
+    color: #eee;
+}
+
+
+.plan-page-title {
+    font-size: 2.5rem;
+}
+
+.plan-page-title>* {
+
+
+    font-family: var(--font6) !important;
+}
+
+#pc-top {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    margin-bottom: 16px;
+    position: relative;
+    top: 0;
+}
+
+.plan-name {
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-family: var(--font4);
+    /* font-weight: bold; */
+}
+
+.plan-price small {
+    font-size: 1.6rem;
+
+}
+
+.plan-price {
+    display: flex;
+    gap: 3px;
+    font-size: 2.4rem;
+    color: var(--org);
+}
+
+
+#pc-mid {
+    flex: 1;
+}
+
+#pc-mid ul {
+    list-style: circle;
+
+}
+
+button {
+    border: 0;
+    outline: none;
+
+}
+
+#pc-bot {}
+
+#pc-mid ul {
+    list-style: none;
+    padding-left: 20px;
+    margin-bottom: 16px;
+    /* Remove default bullets */
+}
+
+#pc-mid ul li {
+    display: flex;
+    position: relative;
+    color: #353535;
+}
+
+#pc-mid ul li::before {
+    content: "";
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    border: 2px solid var(--org);
+    font-weight: bold;
+    display: inline-block;
+    position: absolute;
+    top: 8px;
+    left: -15px;
+}

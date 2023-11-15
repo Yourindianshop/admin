@@ -1,0 +1,92 @@
+/* CSS for Warehouse Card */
+.warehouse-card:hover .warehouse-image {
+    width: 120%;
+
+}
+.locker {
+    padding: 35px !important;
+    max-height: 100dvh;
+    overflow-y: scroll;
+}
+.warehouse-card {
+    border: 1px solid #ccc;
+    border-radius: 13.5px;
+    overflow: hidden;
+    background: #fff;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.176);
+}
+
+.w-data {
+    padding: 15px 25px;
+    /* height: 100%; */
+    color: #232323;
+    flex: 1;
+    width: 100%;
+    /* background-color: var(--blue); */
+}
+
+.wh-img-ol {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    max-height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.warehouse-image {
+    width: 100%;
+    /* position: absolute; */
+    transition: 0.2s ease-in-out;
+}
+
+.warehouse-name {
+    color: var(--org);
+    font-weight: 500;
+    font-family: var(--font6) !important;
+    font-size: 1.6rem;
+    /* margin: 10px 0; */
+}
+
+.warehouse-details {
+    font-size: 0.9rem;
+}
+
+
+/* CSS for Warehouse Container */
+.warehouse-container {
+    display: flex;
+    height: auto;
+    width: 100%;
+    background: #eee;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10vh 10vw;
+    gap: 35px;
+}
+
+.parallax-effect-glare-scale {
+    transform-style: preserve-3d;
+    width: 350px;
+    min-width: 350px;
+    /* width: 30%;
+	 */
+    /* text-align: justify;
+	 */
+    border-radius: 13.5px;
+    /* line-height: 25px; */
+    /* background-color: #272731;
+	 */
+    transition: 0.35s ease-in-out;
+}
+
+.parallax-effect-glare-scale .inner-element {
+    transform: translateZ(45px);
+}
+
+.btn {
+    cursor: pointer;
+}
