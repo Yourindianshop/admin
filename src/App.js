@@ -22,6 +22,7 @@ import Company from "./pages/view/Company";
 import CustomerDetails from "./pages/view/CustomerDetails";
 import AddProduct from "./pages/view/AddProduct";
 import WhiteLabeling from "./pages/view/WhiteLabeling";
+import Orders from "./pages/view/Orders";
 export const MyContext = createContext();
 const App = () => { 
   const [isLogin,setIsLogin]=useState(false);
@@ -41,6 +42,8 @@ const App = () => {
                 <AccRqInfo/>
               } />
               <Route path="/customers" element={<Customers/>} />
+              <Route path="/Orders" element={<Orders/>} />
+
               <Route path="/addProduct" element={<AddProduct/>} />
               <Route path="/CustomerDetails" element={<CustomerDetails/>} />
               <Route path="/transaction" element={<Transaction/>} />

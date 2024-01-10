@@ -55,6 +55,7 @@ function AddProduct() {
         <div style={{display:'flex'}}>
           <button className={`btn ${showProduct && "btn-b"}`} onClick={()=>setShowProduct(true)}>Show Product</button>
           <button className={`btn ${!showProduct && "btn-b"}`} onClick={()=>setShowProduct(false)}>Add Product</button>
+          <button className='btn btn-b' onClick={()=>{nav("/orders")}}>Orders</button>
         </div>
         {!showProduct && <>
           <div id="l-title" className="no-mar">
